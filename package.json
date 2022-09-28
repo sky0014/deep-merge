@@ -1,0 +1,32 @@
+{
+  "name": "@sky0014/deep-merge",
+  "version": "1.0.0",
+  "description": "Merge second object to first object just like Object.assign, best to use it with immer.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rimraf lib && rollup -c",
+    "pub": "npm run build && npm publish --registry=https://registry.npmjs.org --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sky0014/deep-merge.git"
+  },
+  "keywords": [],
+  "author": "sky0014 <sky-wang@qq.com>",
+  "bugs": {
+    "url": "https://github.com/sky0014/deep-merge/issues"
+  },
+  "homepage": "https://github.com/sky0014/deep-merge/#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.70.2",
+    "rollup-plugin-dts": "^4.2.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "symmetry": "^0.6.1"
+  }
+}
